@@ -407,7 +407,82 @@ body::before {
   grid-column: span 2;
 }
 
-@media (max-width: 560px) {
+/* Extra-small phones */
+@media (max-width: 400px) {
+  .app-shell {
+    padding: 0.5rem;
+  }
+
+  .calculator-card {
+    padding: 0.85rem;
+    border-radius: 18px;
+  }
+
+  .calculator-header {
+    gap: 0.65rem;
+  }
+
+  .calculator-header h1 {
+    font-size: 1.1rem;
+  }
+
+  .eyebrow {
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+  }
+
+  .header-actions {
+    gap: 0.45rem;
+  }
+
+  .icon-button {
+    width: 2.35rem;
+    height: 2.35rem;
+  }
+
+  .display-panel {
+    padding: 0.75rem;
+    border-radius: 18px;
+  }
+
+  .display {
+    min-height: 3.4rem;
+    font-size: clamp(1.7rem, 13vw, 2.5rem);
+  }
+
+  .mode-label,
+  .expression-preview {
+    font-size: 0.78rem;
+  }
+
+  .history-panel {
+    padding: 0.75rem;
+    border-radius: 16px;
+  }
+
+  .history-list {
+    max-height: 8.5rem;
+  }
+
+  .history-item,
+  .history-empty {
+    padding: 0.6rem 0.65rem;
+    font-size: 0.9rem;
+  }
+
+  .keypad {
+    gap: 0.45rem;
+  }
+
+  .calculator-btn {
+    min-height: 2.85rem;
+    border-radius: 13px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Phones */
+@media (min-width: 401px) and (max-width: 560px) {
   .app-shell {
     padding: 0.75rem;
   }
@@ -434,6 +509,31 @@ body::before {
   .history-item {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+/* Tablets and desktop */
+@media (min-width: 900px) {
+  .app-shell {
+    padding: 2rem;
+  }
+
+  .calculator-card {
+    width: min(100%, 640px);
+    padding: 1.5rem;
+  }
+
+  .display {
+    min-height: 5rem;
+  }
+
+  .calculator-btn {
+    min-height: 3.9rem;
+    font-size: 1.1rem;
+  }
+
+  .history-list {
+    max-height: 13rem;
   }
 }
 
